@@ -32,7 +32,7 @@
 	if(isset($_POST['user']) && isset($_POST['pass'])){
 		if($_POST['user'] == 'huylv' && $_POST['pass'] == '1') {
 			
-			$service_url = 'http://huylv.dev/service.php';
+			$service_url = 'http://huylv.dev/api/service.php';
 			$curl = curl_init($service_url);
 			$curl_post_data = array(
 					'user' => $_POST['user'],
